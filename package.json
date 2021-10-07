@@ -5,15 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "DEBUG=true electron .",
-
-    "build:macos": "electron-builder --mac --dir",
-    "build:win": "electron-builder --dir",
-
-    "dist:macos": "electron-builder --mac",
-    "dist:win": "electron-builder",
-    "dist:linux": "electron-builder",
-
-    "publish:macos": "electron-builder --x64 --ia32 --publish always",
+    "dist:macos": "electron-builder --mac --x64 --arm64",
+    "dist:win": "electron-builder --win --x64 --ia32 --arm64",
+    "dist:linux": "electron-builder --x64 --ia32 --arm64",
+    "publish:macos": "electron-builder --mac --publish always",
     "publish:win": "electron-builder --publish always",
     "publish:linux": "electron-builder --publish always"
   },
@@ -24,7 +19,7 @@
   },
   "devDependencies": {
     "electron": "^14.0.1",
-    "electron-builder": "^22.11.7"
+    "electron-builder": "^22.10.5"
   },
   "build": {
     "appId": "com.johnhart.radioplayer",
@@ -40,7 +35,10 @@
       "target": "NSIS"
     },
     "nsis": {
-      "perMachine": true
+      "perMachine": true,
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "allowElevation": true
     }
   }
 }
