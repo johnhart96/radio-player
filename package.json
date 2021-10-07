@@ -1,6 +1,6 @@
 {
   "name": "radio-player",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Internet Radio player",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "dist:win": "electron-builder --win --x64 --ia32 --arm64",
     "dist:linux": "electron-builder --x64 --ia32 --arm64",
     "publish:macos": "electron-builder --mac --x64 --arm64 --publish always",
-    "publish:win": "electron-builder --publish always",
+    "publish:win": "electron-builder --x64 --ia32 --publish always",
     "publish:linux": "electron-builder --publish always"
   },
   "repository": {
