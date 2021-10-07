@@ -3,6 +3,8 @@ This was a very simple quick app that I wrote to embed two of the most popular r
 I totally get that this app offers no more fexability than browsing to them in your web browser. But it just provides a simple app to get to them quickly.
 When I am working. I have this in my dock (macOS) and just click it to get music going quickly, it also means that I don't have the radio playing in my browser.
 
+[![Build](https://github.com/johnhart96/radio-player/actions/workflows/autobuild.yml/badge.svg)](https://github.com/johnhart96/radio-player/actions/workflows/autobuild.yml)
+
 ## Supported platforms
 Here is the list of supported platform. Some it has been verified and tested on.
 * MacOS - Apple Silicon (Verified)
