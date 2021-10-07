@@ -1,5 +1,4 @@
 # Radio Player
-## Intro
 This was a very simple quick app that I wrote to embed two of the most popular radio playing websites in the UK, into a desktop app for the main 3 platforms.
 I totally get that this app offers no more fexability than browsing to them in your web browser. But it just provides a simple app to get to them quickly.
 When I am working. I have this in my dock (macOS) and just click it to get music going quickly, it also means that I don't have the radio playing in my browser.
