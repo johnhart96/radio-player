@@ -9,7 +9,7 @@
     "build:win": "electron-builder --dir",
     "dist:macos": "electron-builder --mac",
     "dist:win": "electron-builder",
-    "publish:github": "electron-builder --mac -p always"
+    "dist:linux": "electron-builder"
   },
   "author": "John Hart",
   "license": "apache2",
