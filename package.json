@@ -1,6 +1,6 @@
 {
   "name": "radio-player",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Internet Radio player",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "dist:macos": "electron-builder --mac --x64 --arm64",
     "dist:win": "electron-builder --win --x64 --ia32 --arm64",
     "dist:linux": "electron-builder --x64 --ia32 --arm64",
-    "publish:macos": "electron-builder --mac --publish always",
+    "publish:macos": "electron-builder --mac --x64 --arm64 --publish always",
     "publish:win": "electron-builder --publish always",
     "publish:linux": "electron-builder --publish always"
   },
@@ -19,7 +19,8 @@
   "author": "John Hart",
   "license": "apache2",
   "dependencies": {
-    "bootstrap": "^5.1.1"
+    "bootstrap": "^5.1.1",
+    "electron-updater": "^4.3.9"
   },
   "devDependencies": {
     "electron": "^14.0.1",
@@ -29,6 +30,11 @@
     "appId": "com.johnhart.radioplayer",
     "directories": {
       "output": "build"
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "johnhart96",
+      "repo": "radio-player"
     },
     "productName": "Radio Player",
     "mac": {

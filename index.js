@@ -8,6 +8,7 @@ const {
     globalShortcut,
     dialog
 } = require('electron');
+const { autoUpdater } = require('electron-updater');
 
 const isMac = process.platform === 'darwin';
 
@@ -27,6 +28,7 @@ app.on('ready', () => {
     icon: './icons/logo.png',
   });
   window.loadFile('static/index.html');
+  autoUpdater.checkForUpdatesAndNotify();
 });
 
 
@@ -41,7 +43,7 @@ const template = [
         label: app.name,
         submenu: [
             { role: 'about' },
-            { role: 'hide' },
+            { label: 'Check for updates' , click: function() { autoUpdater.checkForUpdatesAndNotify(); } },
             { role: 'quit' }
         ]
     },
