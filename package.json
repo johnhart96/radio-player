@@ -7,7 +7,6 @@
     "start": "DEBUG=true electron .",
     "dist:macos": "electron-builder --mac --x64 --arm64",
     "dist:win": "electron-builder --win --x64 --ia32 --arm64",
-    "dist:linux": "electron-builder --x64 --ia32 --arm64",
     "publish:macos": "electron-builder --mac --x64 --arm64 --publish always",
     "publish:win": "electron-builder --x64 --ia32 --publish always",
     "publish:linux": "electron-builder --publish always"
