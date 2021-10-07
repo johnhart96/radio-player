@@ -5,11 +5,17 @@
   "main": "index.js",
   "scripts": {
     "start": "DEBUG=true electron .",
+
     "build:macos": "electron-builder --mac --dir",
     "build:win": "electron-builder --dir",
+
     "dist:macos": "electron-builder --mac",
     "dist:win": "electron-builder",
-    "dist:linux": "electron-builder"
+    "dist:linux": "electron-builder",
+
+    "publish:macos": "electron-builder --x64 --ia32 --publish always",
+    "publish:win": "electron-builder --publish always",
+    "publish:linux": "electron-builder --publish always"
   },
   "author": "John Hart",
   "license": "apache2",
