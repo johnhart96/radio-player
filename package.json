@@ -12,6 +12,10 @@
     "publish:win": "electron-builder --publish always",
     "publish:linux": "electron-builder --publish always"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnhart96/radio-player.git"
+  },
   "author": "John Hart",
   "license": "apache2",
   "dependencies": {

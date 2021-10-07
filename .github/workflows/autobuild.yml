@@ -2,18 +2,18 @@ name: Build
 on: [push, pull_request]
 
 jobs:
-  build_on_linux:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@master
-    - uses: samuelmeuli/action-snapcraft@v1.2.0
-      with:
-        node-version: 14
-    - name: build
-      run: npm run publish:linux
-    env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #build_on_linux:
+  #  runs-on: ubuntu-latest
+  #  steps:
+  #  - uses: actions/checkout@v2
+  #  - uses: actions/setup-node@master
+  #  - uses: samuelmeuli/action-snapcraft@v1.2.0
+  #    with:
+  #      node-version: 14
+  #  - name: build
+  #    run: npm run publish:linux
+  #  env:
+  #      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   build_on_mac:
     runs-on: macos-latest
