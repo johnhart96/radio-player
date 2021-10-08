@@ -14,6 +14,6 @@ Here is the list of supported platform. Some it has been verified and tested on.
 * Linux - amd64
 
 ## Downloads
-* [MacOS - Intel](https://github.com/johnhart96/radio-player/releases/download/v1.0.1/Radio-Player-1.0.1.dmg)
-* [MacOS - Apple Silicon](https://github.com/johnhart96/radio-player/releases/download/v1.0.1/Radio-Player-1.0.1-arm64.dmg)
-* [Windows x64](https://github.com/johnhart96/radio-player/releases/download/v1.0.1/Radio-Player-Setup-1.0.1.exe)
+* [MacOS - Intel](https://github.com/johnhart96/radio-player/releases/download/v1.0.1/Radio-Player-1.0.2.dmg)
+* [MacOS - Apple Silicon](https://github.com/johnhart96/radio-player/releases/download/v1.0.2/Radio-Player-1.0.2-arm64.dmg)
+* [Windows x64](https://github.com/johnhart96/radio-player/releases/download/v1.0.1/Radio-Player-Setup-1.0.2.exe)
