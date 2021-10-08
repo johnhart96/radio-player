@@ -10,8 +10,7 @@ Here is the list of supported platform. Some it has been verified and tested on.
 * MacOS - Apple Silicon (Verified)
 * MacOS - Intel amd64
 * Windows 10 or 11 - amd64 (Verified)
-* Windows 10 or 11 - arm64 (Verified)
-* Linux - amd64
+* Windows 10 or 11 - arm64
 
 ## Downloads
 * [MacOS - Intel](https://github.com/johnhart96/radio-player/releases/download/v1.0.1/Radio-Player-1.0.2.dmg)
